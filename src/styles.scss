@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/* You can add global styles to this file, and also import other style files */
+
+:root,
+html,
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif !important;
+  font-optical-sizing: auto;
+  font-size: 12 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+td,
+option,
+select {
+  font-family: "Manrope", sans-serif !important;
+  // color: var(--textColor);
+}
+
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.link {
+  transition: 0.3s;
+  &:hover {
+    color: #4361e7;
+    border-bottom: 1.5px dashed #4361e7;
+    cursor: pointer;
+  }
+}
+
+.w-100 {
+  input,
+  .p-textarea,
+  .p-password,
+  .p-dropdown,
+  .p-inputnumber,
+  .p-calendar,
+  .p-multiselect,
+  .p-menubar {
+    width: 100% !important;
+  }
+}
+
+.brand-color-blue {
+    color: #204ba0
+}
+
+.brand-color-red {
+    color: #d71d25
+}
+
+.brand-color-green {
+    color: #0e8843
+}
+
+.brand-color-black {
+    color: #1d1c1f
+}
+
+.brand-bg-blue {
+    color: #ffffff;
+    background-color: #204ba0;
+}
+
+.brand-bg-red {
+    color: #ffffff;
+    background-color: #d71d25;
+}
+
+.brand-bg-green {
+    color: #ffffff;
+    background-color: #0e8843;
+}
+
+.brand-bg-black {
+    color: #ffffff;
+    background-color: #1d1c1f;
+}

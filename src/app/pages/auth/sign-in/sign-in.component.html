@@ -1,0 +1,37 @@
+<div class="row g-0 custom-bg">
+  <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+    <div class="vh-100 d-flex flex-column p-5 justify-content-center align-items-center gap-3 brand-bg-blue">
+      <h4 class="mb-0">Login</h4>
+      <hr class="border w-50 mt-0">
+      <form class="d-flex flex-column gap-3 w-100" [formGroup]="signInForm">
+        <p-floatlabel variant="in" class="w-100">
+          <input pInputText id="username" formControlName="username" />
+          <label for="username">Username</label>
+        </p-floatlabel>
+        <p-floatlabel variant="in" class="w-100">
+          <p-password inputId="password" formControlName="password" [toggleMask]="true" />
+          <label for="password">Password</label>
+        </p-floatlabel>
+      </form>
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <a class="text-light" [routerLink]="['../forgot-password']">Forgot Password?</a>
+        @if(isSigningIn){
+        <p-button label="Signing In..." outlined="true" severity="success" outlined="true"
+          icon="fas fa-spinner fa-spin" />
+        }@else{
+        <p-button label="Sign In" (onClick)="handleSignIn()" [disabled]="signInForm.invalid" severity="success"
+          icon="fas fa-sign-in" />
+        }
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+    <div class="vh-100 d-flex flex-column p-5 justify-content-center align-items-center gap-5">
+      <img src="images/SNSOP_logo.png" width="40%" alt="">
+      <h1>Management Information System</h1>
+      <img src="images/symbolic_image.png" alt="">
+    </div>
+  </div>
+</div>
+
+<p-toast position="bottom-center" />
