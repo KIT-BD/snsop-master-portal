@@ -124,6 +124,7 @@ export class ApiService {
 
   setToken = (jwtToken: any) => {
     const userData: any = jwtDecode(jwtToken);
+    console.log(userData);
     this.loginState.set({
       token: jwtToken,
       user: userData,
@@ -145,7 +146,7 @@ export class ApiService {
       token: null,
       user: null,
     });
-    this.router.navigateByUrl('/public/sign-in');
+    this.router.navigateByUrl('/auth/sign-in');
   };
 
   // ########################### Basic HTTP Functions ############################

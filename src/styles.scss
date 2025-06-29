@@ -6,10 +6,10 @@
 :root,
 html,
 body {
-  margin: 0;
-  font-family: "Manrope", sans-serif !important;
-  font-optical-sizing: auto;
-  font-size: 12 !important;
+    margin: 0;
+    font-family: "Manrope", sans-serif !important;
+    font-optical-sizing: auto;
+    font-size: 12 !important;
 }
 
 h1,
@@ -24,8 +24,8 @@ a,
 td,
 option,
 select {
-  font-family: "Manrope", sans-serif !important;
-  // color: var(--textColor);
+    font-family: "Manrope", sans-serif !important;
+    // color: var(--textColor);
 }
 
 .fa-classic,
@@ -33,51 +33,53 @@ select {
 .fa-solid,
 .far,
 .fas {
-  font-family: "Font Awesome 6 Free" !important;
+    font-family: "Font Awesome 6 Free" !important;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-
-  li {
     list-style: none;
+    padding: 0;
 
-    a {
-      text-decoration: none;
-      color: #000000;
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
     }
-  }
 }
 
 .hand {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .link {
-  transition: 0.3s;
-  &:hover {
-    color: #4361e7;
-    border-bottom: 1.5px dashed #4361e7;
-    cursor: pointer;
-  }
+    transition: 0.3s;
+
+    &:hover {
+        color: #4361e7;
+        border-bottom: 1.5px dashed #4361e7;
+        cursor: pointer;
+    }
 }
 
 .w-100 {
-  input,
-  .p-textarea,
-  .p-password,
-  .p-dropdown,
-  .p-inputnumber,
-  .p-calendar,
-  .p-multiselect,
-  .p-menubar {
-    width: 100% !important;
-  }
+
+    input,
+    .p-textarea,
+    .p-password,
+    .p-dropdown,
+    .p-inputnumber,
+    .p-calendar,
+    .p-multiselect,
+    .p-menubar {
+        width: 100% !important;
+    }
 }
 
 .brand-color-blue {
@@ -114,4 +116,49 @@ ul {
 .brand-bg-black {
     color: #ffffff;
     background-color: #1d1c1f;
+}
+
+
+// #############################################
+// *********************************************
+// ############ PrimeNG Override ###############
+// *********************************************
+// #############################################
+
+.p-panelmenu {
+    gap: 0 !important;
+}
+
+.p-panelmenu-panel {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.p-panelmenu-header:not(.p-disabled) .p-panelmenu-header-content:hover {
+    background-color: #366edd !important;
+    color: #ffffff !important;
+}
+
+.p-panelmenu-header:not(.p-disabled) .p-panelmenu-header-content:hover .p-panelmenu-submenu-icon {
+    color: #ffffff !important;
+}
+
+.p-panelmenu-item:not(.p-disabled)>.p-panelmenu-item-content:hover {
+    background-color: #7295db !important;
+    color: #ffffff !important;
+}
+
+.p-panelmenu-item:not(.p-disabled)>.p-panelmenu-item-content:hover .p-panelmenu-submenu-icon {
+    color: #ffffff !important;
+}
+
+.p-panelmenu-header-link {
+    &.p-panelmenu-item-link-active {
+        background-color: #366edd !important;
+        color: #ffffff !important;
+    }
+
+    &.p-panelmenu-item-link-active .p-panelmenu-submenu-icon {
+        color: #ffffff !important;
+    }
 }

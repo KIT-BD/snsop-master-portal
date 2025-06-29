@@ -1,0 +1,14 @@
+<header>
+    <div class="d-flex align-items-center justify-content-between h-100 w-100 ps-2 pe-3 gap-3 brand-bg-blue">
+        <div class="d-flex align-items-center hand" [routerLink]="['dashboard']">SNSOP MIS</div>
+        <div class="d-flex align-items-center justify-content-end gap-2">
+            @if(userData){
+            <p-button [routerLink]="['profile']" severity="secondary" size="small" ripple icon="fas fa-user"
+                label="{{userData.username}}" />
+            <p-button severity="danger" size="small" ripple icon="fas fa-sign-out" (onClick)="logout()" />
+            }@else{
+            <i class="far fa-user-circle fa-lg"></i>
+            }
+        </div>
+    </div>
+</header>

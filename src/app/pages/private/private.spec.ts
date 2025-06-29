@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageNotFoundComponent } from './page-not-found.component';
+import { Private } from './private';
 
-describe('PageNotFoundComponent', () => {
-  let component: PageNotFoundComponent;
-  let fixture: ComponentFixture<PageNotFoundComponent>;
+describe('Private', () => {
+  let component: Private;
+  let fixture: ComponentFixture<Private>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PageNotFoundComponent]
+      imports: [Private]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(PageNotFoundComponent);
+
+    fixture = TestBed.createComponent(Private);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

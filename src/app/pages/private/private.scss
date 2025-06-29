@@ -1,0 +1,9 @@
+.main-wrapper {
+    position: fixed;
+    top: 60px;
+    left: 275px;
+    width: calc(100% - 275px);
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    padding: 5px;
+}

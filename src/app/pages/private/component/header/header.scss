@@ -1,0 +1,10 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 275px;
+    width: calc(100% - 275px);
+    height: 60px;
+    box-sizing: border-box;
+    box-shadow: 1px 0 5px #cdcdcd;
+    z-index: 2;
+}

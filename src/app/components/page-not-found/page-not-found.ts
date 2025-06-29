@@ -5,10 +5,10 @@ import { RouterModule } from '@angular/router';
   selector: 'app-page-not-found',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './page-not-found.component.html',
-  styleUrl: './page-not-found.component.scss',
+  templateUrl: './page-not-found.html',
+  styleUrl: './page-not-found.scss',
 })
-export class PageNotFoundComponent {
+export class PageNotFound {
   errorcode: string = '404';
   errormessage: string = 'Not Found!';
 }
