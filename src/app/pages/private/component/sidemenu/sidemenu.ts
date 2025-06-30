@@ -31,7 +31,7 @@ export class Sidemenu implements OnInit {
           {
             label: 'GEO Location',
             icon: 'fas fa-globe',
-            routerLink: 'dashboard',
+            routerLink: '**',
           },
           {
             label: 'Implementation Partners',

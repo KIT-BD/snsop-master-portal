@@ -74,6 +74,8 @@ export class SignIn implements OnInit {
     //   });
   };
 
+  navigateToForgotPassword(){}
+
   ngOnInit(): void {
     this.signInForm = new FormGroup({
       username: new FormControl('admin@gmail.com', Validators.required),

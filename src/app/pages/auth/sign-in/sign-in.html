@@ -19,15 +19,21 @@
         </p-floatlabel>
       </form>
       <div class="d-flex align-items-center justify-content-between w-100">
-        <a class="text-light" [routerLink]="['../forgot-password']">Forgot Password?</a>
+        <p-button label="Forgot Password?" severity="secondary" icon="fas fa-unlock-alt"
+          (onClick)="navigateToForgotPassword()">
+        </p-button>
+
         @if(isSigningIn){
-        <p-button label="Signing In..." outlined="true" severity="success" outlined="true"
-          icon="fas fa-spinner fa-spin" />
+        <p-button label="Signing In..." outlined="false" severity="success" icon="fas fa-spinner fa-spin">
+        </p-button>
         }@else{
         <p-button label="Sign In" (onClick)="handleSignIn()" [disabled]="signInForm.invalid" severity="success"
-          icon="fas fa-sign-in" />
+          icon="fas fa-sign-in">
+        </p-button>
         }
       </div>
+
+
     </div>
   </div>
   <div class="d-none d-sm-block col-12 col-sm-6 col-md-7 col-lg-8 col-xl-9">
