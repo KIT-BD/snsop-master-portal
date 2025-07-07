@@ -12,8 +12,7 @@ export const routeGuard: CanActivateFn = (route:any, state:any) => {
   console.log('routeGuard', route.routeConfig.path);
   if (!isLoggedIn) {
     lState = false;
-    return router.createUrlTree(['/private']);
-
+    router.navigateByUrl('/auth/sign-in');
   }
   return lState;
 };
