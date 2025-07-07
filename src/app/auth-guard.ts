@@ -11,7 +11,7 @@ export const authGuard: CanActivateFn = (route: any, state: any) => {
   console.log('authGuard', isLoggedIn);
   console.log('authGuard', route.routeConfig.path);
 
-  if (isLoggedIn) {
+  if (!isLoggedIn) {
     return router.createUrlTree(['/private']);
   } else {
     return true;
