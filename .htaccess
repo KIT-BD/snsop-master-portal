@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /snsop-master-portal/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /snsop-master-portal/index.html [L]

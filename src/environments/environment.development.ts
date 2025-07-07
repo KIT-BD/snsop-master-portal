@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
   domain: 'localhost',
-  globalApi: "http://api.service.com",
+  globalApi: "http://94.250.203.197",
 };
