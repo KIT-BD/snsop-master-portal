@@ -1,9 +1,17 @@
 .main-wrapper {
-    position: fixed;
-    top: 60px;
-    left: 275px;
-    width: calc(100% - 275px);
-    height: calc(100vh - 60px);
-    overflow: hidden;
-    padding: 5px;
+  position: fixed;
+  top: 60px;
+  left: 275px;
+  width: calc(100% - 275px);
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    left: 0;
+    width: 100%;
+  }
 }

@@ -12,7 +12,7 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { Router, RouterModule } from '@angular/router';
-import { ApiService } from '../../../services/api.service';
+import { ApiService } from '../../../services/api';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 
@@ -73,8 +73,6 @@ export class SignIn implements OnInit {
     //     this.isSigningIn = false;
     //   });
   };
-
-  navigateToForgotPassword(){}
 
   ngOnInit(): void {
     this.signInForm = new FormGroup({

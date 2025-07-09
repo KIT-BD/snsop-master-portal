@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ApiService } from './api.service';
+import { ApiService } from './api';
 import { HttpClientModule } from '@angular/common/http';
 
 describe('ApiService', () => {

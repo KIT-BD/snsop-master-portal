@@ -1,12 +1,25 @@
 .sidemenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 275px;
-    height: 100vh;
-    box-sizing: border-box;
-    border-right: 1px solid #f1f1f1;
-    // box-shadow: 0 1px 10px #cdcdcd;
-    z-index: 1;
-    background-color: #d1e0ee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 100vh;
+  box-sizing: border-box;
+  border-right: 1px solid #f1f1f1;
+  // box-shadow: 0 1px 10px #cdcdcd;
+  z-index: 1;
+  background-color: #d1e0ee;
+  background-image: linear-gradient(to bottom right, #98b7d3, #f1f1f1);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .sidemenu {
+    top: 60px;
+    left: -275px;
+
+    &.mobile {
+      left: 0;
+    }
+  }
 }
